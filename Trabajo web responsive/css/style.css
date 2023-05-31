@@ -1,0 +1,347 @@
+
+/*General*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center center; 
+    font-family: 'MedievalSharp', cursive;  
+}
+
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(52, 130, 52);
+}
+
+.logo{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 2.3em;
+    padding-left: 5px;
+}
+
+.span{
+    color: rgb(249, 188, 35);
+}
+
+.boton-menu{
+    width: 10vw;
+    display: flex;
+    padding-right: 5px;
+}
+
+.boton-menu img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    background-color:rgb(43, 101, 43);
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.navegacion li{
+    margin:  10px 0px;
+}
+
+.navegacion a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color:rgb(249, 188, 35) ;
+}
+
+
+
+
+
+
+
+/*Fin estilo header*/
+
+
+/*index cuerpo de pagina*/
+
+.cuerpo-pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-principal{   
+    background-color:  rgba(14, 50, 14, 0.656);
+    color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.info-principal h2{
+    font-size: 3em;
+    color: rgb(249, 188, 35);
+    
+}
+
+.info-principal p{
+    font-size: 2em;
+
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgba(4, 79, 4, 0.656);
+    color: rgba(255, 255, 255, 0.848);
+    padding: 1%;
+}
+.datos div{
+    padding: 0.5em;
+    border-bottom: 0.1em solid rgb(249, 188, 35);
+}
+.datos h3{
+    color: rgb(249, 188, 35);
+    font-size: 1.5em;
+}
+
+.datos a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.datos a:hover{
+    color: rgb(214, 166, 44);
+}
+
+/*fin estilo index cuerpo de pagina*/
+
+
+/*curiosidades*/
+
+.curiosidades-cuerpo{
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center center; 
+}
+
+.curiosidades-parte-arriba{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/fondo\ de\ lista\ de\ curiosidades.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 2%;
+    height: 80vh;  
+}
+
+
+.lista-curiosidades li{ 
+    padding-bottom: 3.5em;
+    color: rgb(250, 195, 56); 
+}
+
+.lista-curiosidades li a{
+    text-decoration: none;
+    color: rgb(250, 195, 56);    
+    font-weight: bold;
+    font-size:  2.4em;
+    transition: font-size .3s;
+}
+
+.lista-curiosidades li:hover{
+    color:rgb(255, 183, 0);
+}
+
+.lista-curiosidades li a:hover{
+    color:rgb(255, 183, 0);
+    font-size: 2.5em;
+    transition: .4s; 
+}
+
+
+.curiosidades-parte-abajo{
+    padding: 5%;
+    background-color: rgba(249, 188, 35, 0.815);
+}
+.curiosidades-parte-abajo div{
+    border-bottom: 0.2em solid black;
+}
+.curiosidades-parte-abajo h3 {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.curiosidades-parte-abajo p{
+    font-size: 1.4em;
+}
+
+
+
+/* Fin de estilo curiosidades*/
+
+
+
+/*Personajes*/
+
+.cuerpo-pagina-personajes{
+    display: flex;
+    justify-content: center;
+}
+
+.info-personajes{ 
+    width: 75vw;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    background-color:  rgba(14, 50, 14, 0.705);
+    color: rgb(239, 239, 239);
+}    
+
+tr{
+    border-bottom: grey 4px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+th{
+    background-color:rgba(218, 165, 32, 0.914);
+    color: black;
+    height: 5vh;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+table,td,tr{
+    border: 3px solid grey;
+    border-collapse:collapse ;
+}
+
+/*Fin estilo de personajes*/
+
+
+
+/*Contactanos*/
+
+.cuerpo-pagina-contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo-pagina-contactanos form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'MedievalSharp', cursive;
+    width: 40vw;    
+    margin: 50px 0;
+    background-color: rgba(14, 50, 14, 0.848);
+
+}
+
+.cuerpo-pagina-contactanos form label{
+    margin: 0.6em;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(214, 166, 44);
+}
+
+.cuerpo-pagina-contactanos form input{
+    width: 20vw;
+    font-size: 1.4em;
+    font-family: 'MedievalSharp', cursive; 
+}
+
+.enviar{ 
+    cursor: pointer;
+    margin: 40px 0px;
+    font-family: 'MedievalSharp', cursive;
+    background-color:rgba(218, 165, 32, 0.914);
+}
+
+form p{
+    font-size: 1.5em;
+    color: rgba(218, 165, 32, 0.914);
+    margin: 0;
+}
+
+/*Fin estilo contactanos*/
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    background-color:rgb(52, 130, 52);
+}
+
+.redes-sociales{
+    display: flex;
+    height: 20vh;
+}
+
+.contain-redes-sociales{
+    display: flex;
+    margin: auto;
+}
+
+.imagen-red-social{
+height: 6vh;
+width: 6vw;
+margin: 0.5em;
+}
+.imagen-red-social img {
+    transition: transform 0.5s; /* Agrega una transición suave de 0.5 segundos */
+}
+
+.imagen-red-social img:hover {
+    transform: scale(1.3); /* Aplica una escala de transformación para aumentar el tamaño */
+    cursor: pointer;
+}
+
+
+.imagen-red-social img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
