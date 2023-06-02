@@ -14,32 +14,32 @@
     <header>
         <div class="logo">
             <h1>La<br> Comunidad<span class="span"> Wiki</span></h1>
+            <div class="boton-menu">
+                <img src="./img/menu.png" alt="menu responsive">
+            </div>
         </div>
-        <div class="imagen-logo">
-            <img src="img/The lord fo the rings header.png" alt="logo header">
-        </div>
-        <div class="div-nav">
-            <ul class="nav">
-                <li><a href="index.html" class="link">Inicio</a></li>
+
+        <div class="menu ocultar">
+            <ul class="navegacion">
+                <li><a href="index.html" class="link">Home</a></li>
                 <li><a href="curiosidades.html" class="link">Curiosidades</a></li>
                 <li><a href="personajes.html" class="link">Personajes</a></li>
-                </ul>
+                
+            </ul>
         </div>
     </header>
     <div class="cuerpo-pagina-contactanos"> 
         <form action="" id="form">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
+                <input type="text" name="nombre" id="nombre" required>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required>
             <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña" required>
-            <label for="mensaje">Dejanos tu posteo:</label>
-            <textarea name="mensaje" cols="30" rows="10" id="mensaje"></textarea>
+                <input type="password" name="contraseña" id="contraseña" required>
             <label for="captcha">Confirme que no eres un Orco: </label>
-            <p id="generador-captcha"></p>
-            <input type="text" id="captcha-usuario" name="captcha" required>
-            <p id="mensaje-validacion"></p> 
+                <p id="generador-captcha"></p>
+                <input type="text" id="captcha-usuario" name="captcha" required>
+                <p id="mensaje-validacion"></p> 
             <input type="submit" class="enviar"> 
         </form>
     </div>
@@ -62,6 +62,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/contactanos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

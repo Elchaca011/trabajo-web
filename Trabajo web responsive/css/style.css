@@ -14,6 +14,7 @@ body{
     font-family: 'MedievalSharp', cursive;  
 }
 
+/*-----------------------Mobile first---------------------------*/
 
 /*header*/
 
@@ -43,6 +44,7 @@ header{
     width: 10vw;
     display: flex;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 .boton-menu img{
@@ -75,14 +77,8 @@ header{
 }
 
 .link:hover{
-    background-color:rgb(249, 188, 35) ;
+    color:rgb(249, 188, 35) ;
 }
-
-
-
-
-
-
 
 /*Fin estilo header*/
 
@@ -90,25 +86,26 @@ header{
 /*index cuerpo de pagina*/
 
 .cuerpo-pagina{
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
 }
 
 .info-principal{   
-    background-color:  rgba(14, 50, 14, 0.656);
+    background-color:  rgba(14, 50, 14, 0.762);
     color: rgb(255, 255, 255);
     margin: 10px 10px;
     text-align: center;
 }
 
 .info-principal h2{
-    font-size: 3em;
+    font-size: 2.5em;
     color: rgb(249, 188, 35);
     
 }
 
 .info-principal p{
-    font-size: 2em;
+    font-size: 1.3em;
 
 }
 
@@ -119,7 +116,7 @@ header{
     margin: 10px 10px;
     text-align: center;
     font-size: 1.2em;
-    background-color: rgba(4, 79, 4, 0.656);
+    background-color: rgba(4, 79, 4, 0.767);
     color: rgba(255, 255, 255, 0.848);
     padding: 1%;
 }
@@ -149,7 +146,7 @@ header{
 .curiosidades-cuerpo{
     background-image: url("../img/fondo.png");
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
 }
 
 .curiosidades-parte-arriba{
@@ -159,12 +156,13 @@ header{
     background-size: cover;
     background-position: center center;
     padding: 2%;
-    height: 80vh;  
+    height: 65vh;
 }
 
 
 .lista-curiosidades li{ 
-    padding-bottom: 3.5em;
+    padding-bottom: 0.5em;
+    background-color: #0000004a;
     color: rgb(250, 195, 56); 
 }
 
@@ -172,7 +170,7 @@ header{
     text-decoration: none;
     color: rgb(250, 195, 56);    
     font-weight: bold;
-    font-size:  2.4em;
+    font-size:  1.3em;
     transition: font-size .3s;
 }
 
@@ -182,7 +180,7 @@ header{
 
 .lista-curiosidades li a:hover{
     color:rgb(255, 183, 0);
-    font-size: 2.5em;
+    font-size: 1.6em;
     transition: .4s; 
 }
 
@@ -215,15 +213,15 @@ header{
     justify-content: center;
 }
 
-.info-personajes{ 
-    width: 75vw;
+.info-personajes{
+    display: flex;
     margin-top: 4em;
     margin-bottom: 4em;
 }
 
 table{
-    width: 100%;
-    height: 100%;
+    width: 20vw;
+    height: 80vh;
     text-align: center;
     font-family: 'MedievalSharp', cursive;
     background-color:  rgba(14, 50, 14, 0.705);
@@ -233,15 +231,15 @@ table{
 tr{
     border-bottom: grey 4px;
     text-align: center;
-    font-size: 1.5em;
+
 }
 
 th{
+    width: 50vh;
     background-color:rgba(218, 165, 32, 0.914);
     color: black;
-    height: 5vh;
     border-collapse: collapse;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 table,td,tr{
     border: 3px solid grey;
@@ -264,8 +262,9 @@ table,td,tr{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     font-family: 'MedievalSharp', cursive;
-    width: 40vw;    
+    width: 90vw;    
     margin: 50px 0;
     background-color: rgba(14, 50, 14, 0.848);
 
@@ -273,13 +272,13 @@ table,td,tr{
 
 .cuerpo-pagina-contactanos form label{
     margin: 0.6em;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: rgb(214, 166, 44);
 }
 
 .cuerpo-pagina-contactanos form input{
-    width: 20vw;
+    width: 70vw;
     font-size: 1.4em;
     font-family: 'MedievalSharp', cursive; 
 }
@@ -292,19 +291,13 @@ table,td,tr{
 }
 
 form p{
-    font-size: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1.2em;
     color: rgba(218, 165, 32, 0.914);
     margin: 0;
 }
 
 /*Fin estilo contactanos*/
-
-
-
-
-
-
-
 
 
 
@@ -345,3 +338,13 @@ margin: 0.5em;
     object-fit: contain;
 }
 
+/*Fin footer*/
+
+
+
+
+/*Clases especiales------------------------*/
+
+.ocultar{
+    display: none;
+}
