@@ -73,16 +73,18 @@ function main(){
         let email = document.getElementById("email");
         let contraseña = document.getElementById("contraseña");
         let mensajeTextArea = document.getElementById("mensaje");
+        let linkCreaTuPersonaje = document.getElementById("crea_tu_personaje");
     
         if(captchaUsuario.value === captcha){
             mensaje.innerHTML = "Registrado correctamente";
+            linkCreaTuPersonaje.classList.remove("ocultar2");
             nombre.value = "";
             email.value = "";
             contraseña.value = "";
-            mensajeTextArea.value = "";
         }
         else{
             mensaje.innerHTML = "Tú no puedes pasar aquí, ¡eres un orco!";
+            linkCreaTuPersonaje.classList.add("ocultar2");
         }
     }
     

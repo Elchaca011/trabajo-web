@@ -40,6 +40,12 @@ header{
     color: rgb(249, 188, 35);
 }
 
+
+.imagen-logo{
+    display: none;
+}
+
+
 .boton-menu{
     width: 10vw;
     display: flex;
@@ -51,6 +57,11 @@ header{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+.nav-escritorio{
+    display: none;
 }
 
 .menu{
@@ -67,6 +78,7 @@ header{
 
 .navegacion li{
     margin:  10px 0px;
+
 }
 
 .navegacion a{
@@ -150,27 +162,27 @@ header{
 }
 
 .curiosidades-parte-arriba{
-    display: flex;
-    justify-content: space-between;
     background-image: url(../img/fondo\ de\ lista\ de\ curiosidades.jpg);
     background-size: cover;
     background-position: center center;
-    padding: 2%;
-    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-top: 10%;
+    height: 80vh;
 }
 
 
-.lista-curiosidades li{ 
-    padding-bottom: 0.5em;
-    background-color: #0000004a;
-    color: rgb(250, 195, 56); 
+.lista-curiosidades li{
+    list-style: none;
+    padding-bottom: 2em;
+    font-weight: bold;
+    font-size:  1.3em;
 }
 
 .lista-curiosidades li a{
     text-decoration: none;
-    color: rgb(250, 195, 56);    
-    font-weight: bold;
-    font-size:  1.3em;
+    color: rgb(255, 191, 28);    
     transition: font-size .3s;
 }
 
@@ -180,14 +192,14 @@ header{
 
 .lista-curiosidades li a:hover{
     color:rgb(255, 183, 0);
-    font-size: 1.6em;
+    font-size: 1.35em;
     transition: .4s; 
 }
 
 
 .curiosidades-parte-abajo{
     padding: 5%;
-    background-color: rgba(249, 188, 35, 0.815);
+    background-color: rgb(249, 188, 35);
 }
 .curiosidades-parte-abajo div{
     border-bottom: 0.2em solid black;
@@ -214,7 +226,6 @@ header{
 }
 
 .info-personajes{
-    display: flex;
     margin-top: 4em;
     margin-bottom: 4em;
 }
@@ -235,7 +246,6 @@ tr{
 }
 
 th{
-    width: 50vh;
     background-color:rgba(218, 165, 32, 0.914);
     color: black;
     border-collapse: collapse;
@@ -256,6 +266,8 @@ table,td,tr{
     display: flex;
     justify-content: center;
 }
+
+
 
 .cuerpo-pagina-contactanos form{
     display: flex;
@@ -297,6 +309,14 @@ form p{
     margin: 0;
 }
 
+form a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(218, 165, 32, 0.914);
+    margin: 0
+}
+
 /*Fin estilo contactanos*/
 
 
@@ -307,6 +327,10 @@ footer{
     background-color:rgb(52, 130, 52);
 }
 
+footer h4{
+    font-size: 1.4em;
+    margin-left: 0.8em;
+}
 .redes-sociales{
     display: flex;
     height: 20vh;
@@ -314,13 +338,15 @@ footer{
 
 .contain-redes-sociales{
     display: flex;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 .imagen-red-social{
-height: 6vh;
-width: 6vw;
-margin: 0.5em;
+height: 9vh;
+width: 9vw;
+margin-right: 0.5em;
 }
 .imagen-red-social img {
     transition: transform 0.5s; /* Agrega una transición suave de 0.5 segundos */
@@ -342,9 +368,219 @@ margin: 0.5em;
 
 
 
+/*-----------------------Desktop---------------------------*/
+
+@media screen and (min-width: 800px){
+
+    /*header*/
+
+    header{
+        height: 25vh;
+        flex-direction: row;
+    }
+
+    .logo{
+        width: 33.33vw;
+    }
+
+    .logo h1{
+        font-size: 3em;
+    }
+
+    .boton-menu{
+        display: none;
+    }
+
+    .imagen-logo{
+        display: flex;
+        margin: 0 10px;
+        width: 33.33vw;
+    }
+    
+    .imagen-logo img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nav-escritorio{
+        display: flex;
+        justify-content: space-around;
+        width: 33.33vw;
+    }
+
+    .nav-escritorio ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-escritorio ul li a{
+        font-size: 1.3em;
+        margin-left: 0.5em; ;
+    }
+    .nav-escritorio li a :hover{
+        color: rgb(214, 166, 44);
+    }
+    
+    .nav-escritorio li a{
+        font-size: 1.1em;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .link::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background:  rgb(214, 166, 44);
+        transition: width .3s;
+    }
+    
+    .link:hover::after{
+        width: 100%;
+        transition: width .3s;
+    }
+
+
+
+    /*index cuerpo pagina*/
+
+    .cuerpo-pagina{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-principal{   
+        width: 75vw;
+        height: 100vh;
+        color: rgb(255, 255, 255);
+        margin: 8px 20px;
+        text-align: center;
+    }
+    .info-principal h2{
+        font-size: 2.5em;
+        color: rgb(249, 188, 35);
+        
+    }
+
+    .info-principal p{
+        font-size: 2em;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25vw;
+        margin: 8px 20px;
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(4, 79, 4, 0.656);
+        color: rgba(255, 255, 255, 0.848);
+        padding: 1%;
+    }
+    .datos div{
+        padding: 0.5em;
+        border-bottom: 0.1em solid rgb(249, 188, 35);
+    }
+    .datos h3{
+        color: rgb(249, 188, 35);
+        font-size: 1.5em;
+    }
+    
+    .datos a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .datos a:hover{
+        color: rgb(214, 166, 44);
+    }
+
+    /*curiosidades*/
+
+    .curiosidades-parte-arriba{
+        padding: 8%;
+        height: 70vh; 
+    }
+    
+
+    .lista-curiosidades li{
+        font-size: 2.2em;
+        padding-bottom: 1em;
+    }
+
+    .lista-curiosidades li a:hover{
+        font-size: 1.1em;
+    }
+
+
+
+
+    /*personajes*/
+    .info-personajes{
+        width: 75vw;
+    }
+    
+    table{
+        width: 100%;
+        height: 100%;
+    }
+
+    tr{
+        font-size: 1.5em;
+    }
+    th{
+        font-size: 1.5em;
+    }
+
+
+    /*Crea tu personaje*/
+    .cuerpo-pagina-contactanos form{
+        width: 40vw; 
+    }
+
+    .cuerpo-pagina-contactanos form input{
+        width: 20vw;
+        height: 3.5vh;
+        font-size: 1.4em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*footer*/
+    .imagen-red-social{
+        height: 6vh;
+        width: 6vw;
+        margin: 0.5em;
+    }
+
+} 
+
+
+
 
 /*Clases especiales------------------------*/
 
 .ocultar{
     display: none;
+}
+.ocultar2{
+    visibility: hidden;
 }
