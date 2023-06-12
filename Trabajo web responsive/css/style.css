@@ -108,6 +108,7 @@ header{
     color: rgb(255, 255, 255);
     margin: 10px 10px;
     text-align: center;
+    padding: 3%;
 }
 
 .info-principal h2{
@@ -169,7 +170,6 @@ header{
     justify-content: space-between;
     padding: 5%;
     padding-top: 10%;
-    height: 80vh;
 }
 
 
@@ -177,29 +177,20 @@ header{
     list-style: none;
     padding-bottom: 2em;
     font-weight: bold;
-    font-size:  1.3em;
 }
 
 .lista-curiosidades li a{
     text-decoration: none;
+    font-size:  1.5em;
     color: rgb(255, 191, 28);    
-    transition: font-size .3s;
 }
 
-.lista-curiosidades li:hover{
-    color:rgb(255, 183, 0);
-}
-
-.lista-curiosidades li a:hover{
-    color:rgb(255, 183, 0);
-    font-size: 1.35em;
-    transition: .4s; 
-}
 
 
 .curiosidades-parte-abajo{
+    text-align: center;
     padding: 5%;
-    background-color: rgb(249, 188, 35);
+    background-color: rgb(255, 199, 57);
 }
 .curiosidades-parte-abajo div{
     border-bottom: 0.2em solid black;
@@ -228,6 +219,7 @@ header{
 .info-personajes{
     margin-top: 4em;
     margin-bottom: 4em;
+    font-size: small;
 }
 
 table{
@@ -260,7 +252,7 @@ table,td,tr{
 
 
 
-/*Contactanos*/
+/*Captcha*/
 
 .cuerpo-pagina-contactanos{
     display: flex;
@@ -317,14 +309,72 @@ form a{
     margin: 0
 }
 
-/*Fin estilo contactanos*/
+/*Fin estilo captcha*/
 
+/*Crear personaje*/
 
+    .crear-personaje{
+        display: flex;
+        justify-content: center;
+    }
+
+    .crear-personaje form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        font-family: 'MedievalSharp', cursive;
+        width: 90vw;    
+        margin: 50px 0;
+        background-color: rgba(14, 50, 14, 0.848);
+    }
+
+    .crear-personaje form label{
+        margin: 0.6em;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: rgb(214, 166, 44);
+    }
+
+    .crear-personaje form input{
+        font-family: 'MedievalSharp', cursive;
+    }
+
+    .botones{
+        display: flex;
+        margin: 1em 0 ;
+    }
+
+    .botones button{
+        cursor: pointer;
+        margin: 0 0.22em;
+        font-size: 1.3em;
+        font-family: 'MedievalSharp', cursive;
+        background-color:rgba(218, 165, 32, 0.914);
+
+    }
+    .tabla-crear-personaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .tabla-crear-personaje table{
+        height: auto;
+    }
+    
+/*fin crear personaje*/
 
 /*footer*/
 
 footer{
     background-color:rgb(52, 130, 52);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer h4{
@@ -333,7 +383,6 @@ footer h4{
 }
 .redes-sociales{
     display: flex;
-    height: 20vh;
 }
 
 .contain-redes-sociales{
@@ -445,6 +494,8 @@ margin-right: 0.5em;
         transition: width .3s;
     }
 
+    /*fin header*/
+
 
 
     /*index cuerpo pagina*/
@@ -454,17 +505,16 @@ margin-right: 0.5em;
         flex-direction: row;
     }
 
-    .info-principal{   
+    .info-principal{
         width: 75vw;
         height: 100vh;
         color: rgb(255, 255, 255);
         margin: 8px 20px;
         text-align: center;
+        padding: 1%;
     }
     .info-principal h2{
-        font-size: 2.5em;
-        color: rgb(249, 188, 35);
-        
+        font-size: 2.9em;
     }
 
     .info-principal p{
@@ -500,6 +550,10 @@ margin-right: 0.5em;
         color: rgb(214, 166, 44);
     }
 
+    /*Fin index cuerpo pagina*/
+
+
+
     /*curiosidades*/
 
     .curiosidades-parte-arriba{
@@ -509,20 +563,37 @@ margin-right: 0.5em;
     
 
     .lista-curiosidades li{
-        font-size: 2.2em;
+        font-size: 2em;
         padding-bottom: 1em;
+        transition: transform 0.5s;
     }
 
-    .lista-curiosidades li a:hover{
-        font-size: 1.1em;
+    .lista-curiosidades li:hover{
+        color:rgb(255, 183, 0);
+        transform: scale(1.1);
     }
+    
 
+    .curiosidades-parte-abajo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .curiosidades-parte-abajo div {
+        width: 50vw;
+    }
+    
+
+    /* fin curiosidades */
 
 
 
     /*personajes*/
+
     .info-personajes{
         width: 75vw;
+        font-size: medium;
     }
     
     table{
@@ -537,8 +608,11 @@ margin-right: 0.5em;
         font-size: 1.5em;
     }
 
+    /*fin personajes/*
 
-    /*Crea tu personaje*/
+
+
+    /*Captcha*/
     .cuerpo-pagina-contactanos form{
         width: 40vw; 
     }
@@ -549,9 +623,22 @@ margin-right: 0.5em;
         font-size: 1.4em;
     }
 
+    /*fin captcha*/
 
 
+    /*crear tu personaje*/
+    .crear-personaje form{
+        width: 40vw;
+    }
+    .crear-personaje form input {
+        width: 20vw;
+        height: 3.5vh;
+        font-size: 1em; 
+    }
 
+    .tabla-crear-personaje button{
+        font-size: 1.8em;
+    }
 
 
 
@@ -583,4 +670,7 @@ margin-right: 0.5em;
 }
 .ocultar2{
     visibility: hidden;
+}
+.mago{
+    background-color: rgba(0, 255, 255, 0.449);
 }

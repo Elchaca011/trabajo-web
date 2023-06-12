@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crea</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +36,40 @@
             </ul>
         </div>
     </header>
+    <div class="crear-personaje"> 
+        <form action="" id="form">
+            <label for="nombre">Nombre de tu personaje:</label>
+                <input type="text" name="nombre" id="nombre">
+            <label for="clase">Clase de tu personaje:</label>
+                <input type="text" name="clase" id="clase">
+            <label for="habilidades">Habilidades:</label>
+                <input type="text" name="habilidades" id="habilidades">
+            <label for="armas">Armas:</label>
+                <input type="text" name="armas" id="armas">
+            <label for="historia">Escribe una breve descripcion de tu personaje:</label>
+                <input type="text" id="descripcion" name="descripcion">
+            <div class="botones">
+                <button  id="añadir">Añadir</button>
+                <button  id="x3">Agregar x3</button>
+                <button  id="btn-mostrar-tabla">Mostrar tabla</button>
+            </div>
+        </form>
+    </div>
+    <div class="tabla-crear-personaje ocultar">
+        <table id="tabla-personaje">
+            <thead>
+                <th>Nombre</th>
+                <th>Clase</th>
+                <th>Armas</th>
+                <th>Habilidades</th>
+                <th>Descripcion del personaje</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button class="enviar">Borrar</button>
+    </div>
     <footer>
         <div class="redes-sociales">  
             <div class="contain-redes-sociales">
@@ -56,5 +90,6 @@
     </footer>
 
 <script src="js/main.js"></script>
+<script src="js/tablaDinamica.js"></script>
 </body>
 </html>
