@@ -190,9 +190,9 @@ header{
 .curiosidades-parte-abajo{
     text-align: center;
     padding: 5%;
-    background-color: rgb(255, 199, 57);
+    background-color: rgba(255, 199, 57, 0.858);
 }
-.curiosidades-parte-abajo div{
+.curiosidades-parte-abajo section{
     border-bottom: 0.2em solid black;
 }
 .curiosidades-parte-abajo h3 {
@@ -338,6 +338,7 @@ form a{
     }
 
     .crear-personaje form input{
+        font-size: 1.1em;
         font-family: 'MedievalSharp', cursive;
     }
 
@@ -580,7 +581,7 @@ margin-right: 0.5em;
         align-items: center;
         text-align: center;
     }
-    .curiosidades-parte-abajo div {
+    .curiosidades-parte-abajo section {
         width: 50vw;
     }
     
@@ -672,5 +673,5 @@ margin-right: 0.5em;
     visibility: hidden;
 }
 .mago{
-    background-color: rgba(0, 255, 255, 0.449);
+    background-color: rgb(0, 255, 255);
 }

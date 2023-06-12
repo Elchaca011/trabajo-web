@@ -47,7 +47,6 @@ function main(){
     btn_aniadir.addEventListener("click", agregarPersonaje);
 
     function agregarPersonaje(){
-
         let nombre_personaje = document.querySelector("#nombre").value;
         let clase = document.querySelector("#clase").value
         let armas = document.querySelector("#armas").value;
@@ -62,6 +61,8 @@ function main(){
             "descripcion": descripcion,
         }
         personajes_creados.push(personaje_nuevo);
+
+        mostrarTabla();
     }
     
     //Mostrar x3
@@ -73,22 +74,21 @@ function main(){
         agregarPersonaje();
         agregarPersonaje();
         agregarPersonaje();
+
+        mostrarTabla();
     }
 
-    //se muestra tabla
-
-    let mostrar_tabla = document.getElementById("btn-mostrar-tabla");
-    mostrar_tabla.addEventListener("click", mostrarTabla);
+    //funcion muestrar tabla
 
     function mostrarTabla(){
         let div_tabla_personaje = document.querySelector(".tabla-crear-personaje");
-        div_tabla_personaje.classList.toggle("ocultar");
+        div_tabla_personaje.classList.remove("ocultar");
 
         let tabla = document.querySelector("#tabla-personaje tbody");
 
         tabla.innerHTML= "";
 
-        for(let i = 0; i < personajes_creados.length; i++){    
+        for(let i = 0; i < personajes_creados.length; i++){
             tabla.innerHTML += `<tr>
                                     <td> ${personajes_creados[i].nombre} </td>
                                     <td> ${personajes_creados[i].clase} </td>
@@ -98,6 +98,17 @@ function main(){
                                 </tr>`;
             
         }
+    }
+
+    //se borra los personajes creados
+    let btn_borrar = document.querySelector("#borrar");
+    btn_borrar.addEventListener("click", borrar);
+
+    function borrar(){
         
+        for(let i = personajes_creados.length; i >= 4; i--){
+            personajes_creados.pop();
+            mostrarTabla();
+        }
     }
 }
