@@ -23,7 +23,7 @@ function main(){
 
         {
             "nombre":"radagast",
-            "clase": "mago",
+            "clase": "elfo",
             "arma": "baston magico y espada",
             "habilidades": "lanzar hechizos y llamar a animales salvajes",
             "descripcion": "es un istari enviado a la tierra media pra luchar contra la oscuridad.",
@@ -89,14 +89,56 @@ function main(){
         tabla.innerHTML= "";
 
         for(let i = 0; i < personajes_creados.length; i++){
-            tabla.innerHTML += `<tr>
+            if(personajes_creados[i].clase === "mago"){
+                tabla.innerHTML += `<tr>
+                                    <td class = "mago"> ${personajes_creados[i].nombre} </td>
+                                    <td class = "mago"> ${personajes_creados[i].clase} </td>
+                                    <td class = "mago"> ${personajes_creados[i].arma} </td>
+                                    <td class = "mago"> ${personajes_creados[i].habilidades} </td>
+                                    <td class = "mago"> ${personajes_creados[i].descripcion} </td>
+                                </tr>`;
+            }else if(personajes_creados[i].clase === "hobbit"){
+                tabla.innerHTML += `<tr>
+                                    <td class = "hobbit"> ${personajes_creados[i].nombre} </td>
+                                    <td class = "hobbit"> ${personajes_creados[i].clase} </td>
+                                    <td class = "hobbit"> ${personajes_creados[i].arma} </td>
+                                    <td class = "hobbit"> ${personajes_creados[i].habilidades} </td>
+                                    <td class = "hobbit"> ${personajes_creados[i].descripcion} </td>
+                                </tr>`;
+            }else if (personajes_creados[i].clase === "hombre"){
+                tabla.innerHTML += `<tr>
+                                    <td class = "hombre"> ${personajes_creados[i].nombre} </td>
+                                    <td class = "hombre"> ${personajes_creados[i].clase} </td>
+                                    <td class = "hombre"> ${personajes_creados[i].arma} </td>
+                                    <td class = "hombre"> ${personajes_creados[i].habilidades} </td>
+                                    <td class = "hombre"> ${personajes_creados[i].descripcion} </td>
+                                </tr>`;
+            }else if (personajes_creados[i].clase === "enano"){
+                tabla.innerHTML += `<tr>
+                                    <td class = "enano"> ${personajes_creados[i].nombre} </td>
+                                    <td class = "enano"> ${personajes_creados[i].clase} </td>
+                                    <td class = "enano"> ${personajes_creados[i].arma} </td>
+                                    <td class = "enano"> ${personajes_creados[i].habilidades} </td>
+                                    <td class = "enano"> ${personajes_creados[i].descripcion} </td>
+                                </tr>`;
+            }else if(personajes_creados[i].clase === "elfo"){
+                tabla.innerHTML += `<tr>
+                                    <td class = "elfo"> ${personajes_creados[i].nombre} </td>
+                                    <td class = "elfo"> ${personajes_creados[i].clase} </td>
+                                    <td class = "elfo"> ${personajes_creados[i].arma} </td>
+                                    <td class = "elfo"> ${personajes_creados[i].habilidades} </td>
+                                    <td class = "elfo"> ${personajes_creados[i].descripcion} </td>
+                                </tr>`;
+            }
+            else{
+                tabla.innerHTML += `<tr>
                                     <td> ${personajes_creados[i].nombre} </td>
                                     <td> ${personajes_creados[i].clase} </td>
                                     <td> ${personajes_creados[i].arma} </td>
                                     <td> ${personajes_creados[i].habilidades} </td>
                                     <td> ${personajes_creados[i].descripcion} </td>
                                 </tr>`;
-            
+            }
         }
     }
 

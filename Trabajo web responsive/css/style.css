@@ -283,7 +283,7 @@ table,td,tr{
 
 .cuerpo-pagina-contactanos form input{
     width: 70vw;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-family: 'MedievalSharp', cursive; 
 }
 
@@ -295,7 +295,6 @@ table,td,tr{
 }
 
 form p{
-    padding-top: 1.5em;
     font-size: 1.2em;
     color: rgba(218, 165, 32, 0.914);
     margin: 0;
@@ -306,7 +305,8 @@ form a{
     font-weight: bold;
     font-size: 1.2em;
     color: rgba(218, 165, 32, 0.914);
-    margin: 0
+    margin: 0;
+    padding-top: 0.5em;
 }
 
 /*Fin estilo captcha*/
@@ -615,20 +615,24 @@ margin-right: 0.5em;
 
     /*Captcha*/
     .cuerpo-pagina-contactanos form{
-        width: 40vw; 
+        width: 40vw;
+        padding: 2%;
     }
 
     .cuerpo-pagina-contactanos form input{
         width: 20vw;
         height: 3.5vh;
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
+    
+    
 
     /*fin captcha*/
 
 
     /*crear tu personaje*/
     .crear-personaje form{
+        padding: 2%;
         width: 40vw;
     }
     .crear-personaje form input {
@@ -673,5 +677,19 @@ margin-right: 0.5em;
     visibility: hidden;
 }
 .mago{
-    background-color: rgb(0, 255, 255);
+    background-color: rgba(255, 255, 255, 0.656);
+    color: #000;
+}
+.hobbit{
+    background-color: rgba(123, 248, 106, 0.656);
+}
+.hombre{
+    background-color: rgba(61, 161, 243, 0.656);
+}
+.enano{
+    background-color: rgb(252, 255, 51, 0.656);
+    color: #000;
+}
+.elfo{
+    background-color: rgb(14, 88, 14, 0.656);
 }
