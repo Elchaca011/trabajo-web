@@ -1,0 +1,695 @@
+
+/*General*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center center; 
+    font-family: 'MedievalSharp', cursive;  
+}
+
+/*-----------------------Mobile first---------------------------*/
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(52, 130, 52);
+}
+
+.logo{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 2.3em;
+    padding-left: 5px;
+}
+
+.span{
+    color: rgb(249, 188, 35);
+}
+
+
+.imagen-logo{
+    display: none;
+}
+
+
+.boton-menu{
+    width: 10vw;
+    display: flex;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.boton-menu img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.nav-escritorio{
+    display: none;
+}
+
+.menu{
+    background-color:rgb(43, 101, 43);
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.navegacion li{
+    margin:  10px 0px;
+
+}
+
+.navegacion a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:rgb(249, 188, 35) ;
+}
+
+/*Fin estilo header*/
+
+
+/*index cuerpo de pagina*/
+
+.cuerpo-pagina{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-principal{   
+    background-color:  rgba(14, 50, 14, 0.762);
+    color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    text-align: center;
+    padding: 3%;
+}
+
+.info-principal h2{
+    font-size: 2.5em;
+    color: rgb(249, 188, 35);
+    
+}
+
+.info-principal p{
+    font-size: 1.3em;
+
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgba(4, 79, 4, 0.767);
+    color: rgba(255, 255, 255, 0.848);
+    padding: 1%;
+}
+.datos div{
+    padding: 0.5em;
+    border-bottom: 0.1em solid rgb(249, 188, 35);
+}
+.datos h3{
+    color: rgb(249, 188, 35);
+    font-size: 1.5em;
+}
+
+.datos a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.datos a:hover{
+    color: rgb(214, 166, 44);
+}
+
+/*fin estilo index cuerpo de pagina*/
+
+
+/*curiosidades*/
+
+.curiosidades-cuerpo{
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.curiosidades-parte-arriba{
+    background-image: url(../img/fondo\ de\ lista\ de\ curiosidades.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+
+.lista-curiosidades li{
+    list-style: none;
+    padding-bottom: 2em;
+    font-weight: bold;
+}
+
+.lista-curiosidades li a{
+    text-decoration: none;
+    font-size:  1.5em;
+    color: rgb(255, 191, 28);    
+}
+
+
+
+.curiosidades-parte-abajo{
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(255, 199, 57, 0.858);
+}
+.curiosidades-parte-abajo section{
+    border-bottom: 0.2em solid black;
+}
+.curiosidades-parte-abajo h3 {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.curiosidades-parte-abajo p{
+    font-size: 1.4em;
+}
+
+
+
+/* Fin de estilo curiosidades*/
+
+
+
+/*Personajes*/
+
+.cuerpo-pagina-personajes{
+    display: flex;
+    justify-content: center;
+}
+
+.info-personajes{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-size: small;
+}
+
+table{
+    width: 20vw;
+    height: 80vh;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    background-color:  rgba(14, 50, 14, 0.705);
+    color: rgb(239, 239, 239);
+}    
+
+tr{
+    border-bottom: grey 4px;
+    text-align: center;
+
+}
+
+th{
+    background-color:rgba(218, 165, 32, 0.914);
+    color: black;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+table,td,tr{
+    border: 3px solid grey;
+    border-collapse:collapse ;
+}
+
+/*Fin estilo de personajes*/
+
+
+
+/*Captcha*/
+
+.cuerpo-pagina-contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cuerpo-pagina-contactanos form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    width: 90vw;    
+    margin: 50px 0;
+    background-color: rgba(14, 50, 14, 0.848);
+
+}
+
+.cuerpo-pagina-contactanos form label{
+    margin: 0.6em;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(214, 166, 44);
+}
+
+.cuerpo-pagina-contactanos form input{
+    width: 70vw;
+    font-size: 1.7em;
+    font-family: 'MedievalSharp', cursive; 
+}
+
+.enviar{ 
+    cursor: pointer;
+    margin: 40px 0px;
+    font-family: 'MedievalSharp', cursive;
+    background-color:rgba(218, 165, 32, 0.914);
+}
+
+form p{
+    font-size: 1.2em;
+    color: rgba(218, 165, 32, 0.914);
+    margin: 0;
+}
+
+form a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(218, 165, 32, 0.914);
+    margin: 0;
+    padding-top: 0.5em;
+}
+
+/*Fin estilo captcha*/
+
+/*Crear personaje*/
+
+    .crear-personaje{
+        display: flex;
+        justify-content: center;
+    }
+
+    .crear-personaje form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        font-family: 'MedievalSharp', cursive;
+        width: 90vw;    
+        margin: 50px 0;
+        background-color: rgba(14, 50, 14, 0.848);
+    }
+
+    .crear-personaje form label{
+        margin: 0.6em;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: rgb(214, 166, 44);
+    }
+
+    .crear-personaje form input{
+        font-size: 1.1em;
+        font-family: 'MedievalSharp', cursive;
+    }
+
+    .botones{
+        display: flex;
+        margin: 1em 0 ;
+    }
+
+    .botones button{
+        cursor: pointer;
+        margin: 0 0.22em;
+        font-size: 1.3em;
+        font-family: 'MedievalSharp', cursive;
+        background-color:rgba(218, 165, 32, 0.914);
+
+    }
+    .tabla-crear-personaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .tabla-crear-personaje table{
+        height: auto;
+    }
+    
+/*fin crear personaje*/
+
+/*footer*/
+
+footer{
+    background-color:rgb(52, 130, 52);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer h4{
+    font-size: 1.4em;
+    margin-left: 0.8em;
+}
+.redes-sociales{
+    display: flex;
+}
+
+.contain-redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.imagen-red-social{
+height: 9vh;
+width: 9vw;
+margin-right: 0.5em;
+}
+.imagen-red-social img {
+    transition: transform 0.5s; /* Agrega una transición suave de 0.5 segundos */
+}
+
+.imagen-red-social img:hover {
+    transform: scale(1.3); /* Aplica una escala de transformación para aumentar el tamaño */
+    cursor: pointer;
+}
+
+
+.imagen-red-social img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/*Fin footer*/
+
+
+
+/*-----------------------Desktop---------------------------*/
+
+@media screen and (min-width: 800px){
+
+    /*header*/
+
+    header{
+        height: 25vh;
+        flex-direction: row;
+    }
+
+    .logo{
+        width: 33.33vw;
+    }
+
+    .logo h1{
+        font-size: 3em;
+    }
+
+    .boton-menu{
+        display: none;
+    }
+
+    .imagen-logo{
+        display: flex;
+        margin: 0 10px;
+        width: 33.33vw;
+    }
+    
+    .imagen-logo img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nav-escritorio{
+        display: flex;
+        justify-content: space-around;
+        width: 33.33vw;
+    }
+
+    .nav-escritorio ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-escritorio ul li a{
+        font-size: 1.3em;
+        margin-left: 0.5em; ;
+    }
+    .nav-escritorio li a :hover{
+        color: rgb(214, 166, 44);
+    }
+    
+    .nav-escritorio li a{
+        font-size: 1.1em;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .link::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background:  rgb(214, 166, 44);
+        transition: width .3s;
+    }
+    
+    .link:hover::after{
+        width: 100%;
+        transition: width .3s;
+    }
+
+    /*fin header*/
+
+
+
+    /*index cuerpo pagina*/
+
+    .cuerpo-pagina{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-principal{
+        width: 75vw;
+        height: 100vh;
+        color: rgb(255, 255, 255);
+        margin: 8px 20px;
+        text-align: center;
+        padding: 1%;
+    }
+    .info-principal h2{
+        font-size: 2.9em;
+    }
+
+    .info-principal p{
+        font-size: 2em;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25vw;
+        margin: 8px 20px;
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(4, 79, 4, 0.656);
+        color: rgba(255, 255, 255, 0.848);
+        padding: 1%;
+    }
+    .datos div{
+        padding: 0.5em;
+        border-bottom: 0.1em solid rgb(249, 188, 35);
+    }
+    .datos h3{
+        color: rgb(249, 188, 35);
+        font-size: 1.5em;
+    }
+    
+    .datos a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .datos a:hover{
+        color: rgb(214, 166, 44);
+    }
+
+    /*Fin index cuerpo pagina*/
+
+
+
+    /*curiosidades*/
+
+    .curiosidades-parte-arriba{
+        padding: 8%;
+        height: 70vh; 
+    }
+    
+
+    .lista-curiosidades li{
+        font-size: 2em;
+        padding-bottom: 1em;
+        transition: transform 0.5s;
+    }
+
+    .lista-curiosidades li:hover{
+        color:rgb(255, 183, 0);
+        transform: scale(1.1);
+    }
+    
+
+    .curiosidades-parte-abajo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .curiosidades-parte-abajo section {
+        width: 50vw;
+    }
+    
+
+    /* fin curiosidades */
+
+
+
+    /*personajes*/
+
+    .info-personajes{
+        width: 75vw;
+        font-size: medium;
+    }
+    
+    table{
+        width: 100%;
+        height: 100%;
+    }
+
+    tr{
+        font-size: 1.5em;
+    }
+    th{
+        font-size: 1.5em;
+    }
+
+    /*fin personajes/*
+
+
+
+    /*Captcha*/
+    .cuerpo-pagina-contactanos form{
+        width: 40vw;
+        padding: 2%;
+    }
+
+    .cuerpo-pagina-contactanos form input{
+        width: 20vw;
+        height: 3.5vh;
+        font-size: 1.5em;
+    }
+    
+    
+
+    /*fin captcha*/
+
+
+    /*crear tu personaje*/
+    .crear-personaje form{
+        padding: 2%;
+        width: 40vw;
+    }
+    .crear-personaje form input {
+        width: 20vw;
+        height: 3.5vh;
+        font-size: 1em; 
+    }
+
+    .tabla-crear-personaje button{
+        font-size: 1.8em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*footer*/
+    .imagen-red-social{
+        height: 6vh;
+        width: 6vw;
+        margin: 0.5em;
+    }
+
+} 
+
+
+
+
+/*Clases especiales------------------------*/
+
+.ocultar{
+    display: none;
+}
+.ocultar2{
+    visibility: hidden;
+}
+.mago{
+    background-color: rgba(255, 255, 255, 0.656);
+    color: #000;
+}
+.hobbit{
+    background-color: rgba(123, 248, 106, 0.656);
+}
+.hombre{
+    background-color: rgba(61, 161, 243, 0.656);
+}
+.enano{
+    background-color: rgb(252, 255, 51, 0.656);
+    color: #000;
+}
+.elfo{
+    background-color: rgb(14, 88, 14, 0.656);
+}
