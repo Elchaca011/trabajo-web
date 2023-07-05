@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Comunidad</title>
+        <link rel="icon" href="img/ring.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+            <header>
+                <div class="logo">
+                    <h1>La<br> Comunidad<span class="span"> Wiki</span></h1>
+                    <figure class="boton-menu">
+                        <img src="./img/menu.png" alt="menu responsive">
+                    </figure>
+                </div>
+                <figure class="imagen-logo">
+                    <img src="img/The lord fo the rings header.png" alt="logo header">
+                </figure>
+                <nav class="nav-escritorio">
+                    <ul>
+                        <li><a href="index.html" class="link">Home</a></li>
+                        <li><a href="personajes.html" class="link">Personajes</a></li>
+                        <li><a href="curiosidades.html" class="link">Curiosidades</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu ocultar">
+                    <ul class="navegacion">
+                        <li><a href="index.html" class="link">Home</a></li>
+                        <li><a href="personajes.html" class="link">Personajes</a></li>
+                        <li><a href="curiosidades.html" class="link">Curiosidades</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="crear-personaje"> 
+                <form action="" id="form">
+                    <label for="nombre">Nombre de tu personaje:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="ej: Gandalf">
+                    <label for="clase">Clase de tu personaje:</label>
+                        <input type="text" name="clase" id="clase" placeholder="hombre,mago,hobbit,elfo,enano">
+                    <label for="habilidades">Habilidades:</label>
+                        <input type="text" name="habilidades" id="habilidades" placeholder="ej: magia,arqueria">
+                    <label for="armas">Armas:</label>
+                        <input type="text" name="armas" id="armas" placeholder="ej: espada,baston magico">
+                    <label for="historia">Escribe una breve descripcion de tu personaje:</label>
+                        <input type="text" id="descripcion" name="descripcion" placeholder="describa a su personaje">
+                    <div class="botones">
+                        <button  id="añadir">Añadir</button>
+                        <button  id="x3">Agregar x3</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tabla-crear-personaje ocultar">
+                <table id="tabla-personaje">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Clase</th>
+                        <th>Armas</th>
+                        <th>Habilidades</th>
+                        <th>Descripcion del personaje</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <button class="enviar" id="borrar">Borrar personajes</button>
+            </div>
+            <footer>
+                <div class="redes-sociales">  
+                    <div class="contain-redes-sociales">
+                        
+                        <div class="imagen-red-social">
+                            <img src="img/facebook.png" alt="facebook">
+                        </div>
+                        <div class="imagen-red-social">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </div>
+                        
+                        <div class="imagen-red-social">
+                            <img src="img/youtube.png" alt="facebook"> 
+                        </div>
+                        <h4>La comunidad <span class="span"> &#169 </span></h4>  
+                        
+                    </div>
+                </div>
+            </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/tablaDinamica.js"></script>
+    </body>
+</html>
