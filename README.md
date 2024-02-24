@@ -18,8 +18,8 @@ This form have a simple captcha to validate.
 
 ## How to Use
 
-1.Clone the repository: git clone https://github.com/InakiGopar/the-lord-of-the-rings-page.git.
-2.Open index.html in your web browser.
+1. Clone the repository: git clone https://github.com/InakiGopar/the-lord-of-the-rings-page.git.
+2. Open index.html in your web browser.
 
 
 
